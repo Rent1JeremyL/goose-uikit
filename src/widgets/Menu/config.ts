@@ -120,18 +120,18 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/goosedefi",
+        href: "#",
       },
       {
         label: "Announcements",
-        href: "https://t.me/goosefinanceann",
+        href: "#",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/goosedefi",
+    href: "https://twitter.com/XenomorphFinan1",
   },
 ];
 
