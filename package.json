@@ -13,7 +13,8 @@
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "format": "prettier --check src/**/*.{js,jsx,ts,tsx}",
+    "format-chk": "prettier --check src/**/*.{js,jsx,ts,tsx}",
+	"format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
@@ -21,8 +22,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "yarn format-chk",
+      "commit-msg": ""
     }
   },
   "jest": {
@@ -57,7 +58,7 @@
     "jest": "^26.6.3",
     "jest-styled-components": "^7.0.3",
     "np": "^7.2.0",
-    "prettier": "^2.1.2",
+    "prettier": "^2.3.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
