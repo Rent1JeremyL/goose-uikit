@@ -1,6 +1,6 @@
 {
   "name": "@pancakeswap-libs/uikit",
-  "version": "0.10.4",
+  "version": "0.10.41",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -22,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format-chk",
+      "pre-commit": "",
       "commit-msg": ""
     }
   },
