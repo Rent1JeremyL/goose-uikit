@@ -2683,6 +2683,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
+var CardImage = styled__default['default'].img(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  justify-content: center;\n"], ["\n  margin-bottom: 5px;\n  justify-content: center;\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
@@ -2727,12 +2728,13 @@ var Menu = function (_a) {
             React__default['default'].createElement(Flex, null,
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
+        React__default['default'].createElement(CardImage, { src: "/images/rugdoc.png", alt: "Rugdoc Review", width: 265, height: 113 }),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6;
 
 var ToastAction = function (_a) {
     var action = _a.action;
