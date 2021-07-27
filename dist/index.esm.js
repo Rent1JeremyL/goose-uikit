@@ -2225,11 +2225,7 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "#",
-            },
-            {
-                label: "Announcements",
-                href: "#",
+                href: "http://t.me/xenodefi",
             },
         ],
     },
