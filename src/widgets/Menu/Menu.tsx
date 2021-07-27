@@ -58,6 +58,11 @@ const MobileOnlyOverlay = styled(Overlay)`
   }
 `;
 
+const CardImage = styled.img`
+  margin-bottom: 5px;
+  justify-content: center;
+`
+
 const Menu: React.FC<NavProps> = ({
   account,
   login,
@@ -125,6 +130,7 @@ const Menu: React.FC<NavProps> = ({
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
+	  <CardImage src="/images/rugdoc.png" alt="Rugdoc Review" width={265} height={113} />
       <BodyWrapper>
         <Panel
           isPushed={isPushed}
